@@ -6,6 +6,8 @@ from collections import Counter
 from PIL import Image
 
 
+Image.MAX_IMAGE_PIXELS = None
+
 def split(im, rows, cols, image_path):
     im_width, im_height = im.size
     row_width = int(im_width / rows)
